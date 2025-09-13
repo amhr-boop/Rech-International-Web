@@ -1,12 +1,12 @@
-/* style.css */
+/* style.css (green theme) */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f8f9fa;
+  background: #ffffff; /* White background */
   color: #333;
 }
 header {
-  background: #004466;
+  background: #006400; /* Dark green */
   padding: 15px 30px;
   color: white;
   display: flex;
@@ -24,13 +24,15 @@ nav a {
   font-weight: bold;
 }
 nav a:hover {
-  text-decoration: underline;
+  color: #32CD32; /* Light green hover effect */
 }
 .hero {
   background: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
+  background-blend-mode: overlay;
+  background-color: rgba(0,100,0,0.6); /* Dark green overlay */
 }
 .hero h2 {
   font-size: 40px;
@@ -50,14 +52,20 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .card {
-  background: white;
+  background: #f8fff8; /* Very light green-white */
   padding: 20px;
   border-radius: 8px;
+  border: 1px solid #cceccc;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 250px;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  border-color: #32CD32; /* Highlight on hover */
 }
 footer {
-  background: #004466;
+  background: #006400; /* Dark green */
   color: white;
   text-align: center;
   padding: 20px;
@@ -76,7 +84,7 @@ form input, form textarea {
   border-radius: 5px;
 }
 form button {
-  background: #004466;
+  background: #006400; /* Dark green button */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -84,5 +92,5 @@ form button {
   cursor: pointer;
 }
 form button:hover {
-  background: #006699;
+  background: #32CD32; /* Light green hover */
 }

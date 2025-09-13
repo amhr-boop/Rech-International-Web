@@ -1,0 +1,56 @@
+/* style.css (Light Green Header/Footer, Natural Hero Image) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff; /* White background */
+  color: #333;
+}
+header {
+  background: #32CD32; /* Light Green */
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #006400; /* Dark green hover effect */
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+}
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #f8fff8; /* Very light green-white */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #cc
